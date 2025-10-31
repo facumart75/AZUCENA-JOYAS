@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt=""></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="coleccion.html">Colección</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="cart-icon">
+              <a href="carrito.html"> 
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+              </a>
+            </div>
+        </nav>
+    </header>
+    <main class="contact-page">
+        <div class="contact-container">
+        
+            <div class="contact-info-details">
+                <h2 class="contact-title">CONTACTANOS</h2>
+                <p class="contact-slogan">Estamos aquí para ayudarte a encontrar la joya perfecta.</p>
+
+                <div class="info-group">
+                    <h3>Taller y Showroom</h3>
+                    <p>Calle Falsa 123, Recoleta</p>
+                    <p>Buenos Aires, Argentina</p>
+                </div>
+            
+                <div class="info-group">
+                    <h3>Consultas</h3>
+                    <p>Email: info@azucenajoyas.com</p>
+                    <p>Teléfono: +54 9 11 5555-5555</p>
+                </div>
+            
+                <div class="info-group">
+                    <h3>Horarios</h3>
+                    <p>Lun a Vie: 10:00 - 18:00 hs</p>
+                    <p>Sábados: 10:00 - 13:00 hs</p>
+                </div>
+            </div>
+        
+            <div class="contact-form-wrapper">
+                <h2 class="form-heading">Envíanos un mensaje</h2>
+            
+                <form action="#" method="POST" class="contact-form">
+                
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn send-btn">ENVIAR CONSULTA</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2025 AZUCENA — Hecho con ❤️</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AZUCENA</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo">
+        <a href="index.html"><img src="./img/logo.png" alt=""></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="sobre.html">Sobre Nosotros</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="cart-icon">
+        <a href="carrito.html"> 
+            🛒
+            <span class="cart-count" id="cartCount">0</span>
+        </a>
+    </div>
+    </nav>
+  </header>
+  <main class="product-detail-page">
+    <div class="product-detail-container">
+        
+        <div class="product-info">
+            <h1 class="product-title">Collar Gota de Amatista</h1>
+            <p class="product-price-detail">$75.000 ARS</p>
+            
+            <p class="product-description">
+                Este elegante collar presenta una hermosa piedra natural de Amatista en un pulido corte de lágrima. El vibrante color morado hace que cada colgante sea único.
+            </p>
+
+            <div class="size-selector" style="margin-bottom: 30px;">
+                <label for="cadena">Largo de Cadena:</label>
+                <select id="cadena" name="cadena" style="padding: 8px; border: 1px solid #ddd;">
+                    <option value="40">40 cm</option>
+                    <option value="50">50 cm</option>
+                </select>
+            </div>
+
+            <button class="btn add-to-cart-btn" id="addToCartBtn" 
+                    data-product-name="Collar Gota de Amatista" 
+                    data-product-price="75000"
+                    data-product-id="collar-amatista-gota">
+                AÑADIR AL CARRITO
+            </button>
+
+            <div class="accordion-info">
+                <h3>Información de Envío y Devoluciones</h3>
+                </div>
+            
+        </div>
+        
+        <div class="product-gallery">
+            <img src="./img/collaramatista.png" alt="Collar Amatista" class="main-image" id="mainImage">
+            
+            <div class="thumbnails">
+                <img src="./img/collaramatista.png" alt="Vista A" class="thumbnail-item" data-full-img="./img/producto1-collar-a.jpg">
+                <img src="./img/collaramatista.png" alt="Vista B" class="thumbnail-item" data-full-img="./img/producto1-collar-b.jpg">
+                <img src="./img/collaramatista.png" alt="Vista C" class="thumbnail-item" data-full-img="./img/producto1-collar-c.jpg">
+            </div>
+        </div>
+        
+    </div>
+  </main>
+  <footer class="footer">
+    <p>© 2025 AZUCENA — Hecho con ❤️</p>
+  </footer>
+  <script src="./js/index.js"></script>
+  <script src="./js/carrito.js"></script>
+</body>
+</html>

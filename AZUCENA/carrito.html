@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Carrito de Compras | AZUCENA</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="./img/logo.png" alt="Logo AZUCENA"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="coleccion.html">Colección</a></li>
+                <li><a href="sobre.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon">
+            <a href="carrito.html"> 
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-container">
+            <h1 class="cart-heading">TU CARRITO DE COMPRAS</h1>
+            
+            <section class="cart-items-list" id="cartItemsList">
+                </section>
+
+            <section class="cart-summary">
+                <div class="summary-line">
+                    <p>Subtotal:</p>
+                    <p id="cartSubtotal">$0.00 ARS</p>
+                </div>
+                <div class="summary-line">
+                    <p>Costo de Envío:</p>
+                    <p>Calculado al finalizar la compra</p>
+                </div>
+                <div class="summary-line total-line">
+                    <h3>Total (sin envío):</h3>
+                    <h3 id="cartTotal">$0.00 ARS</h3>
+                </div>
+                
+                <button class="btn checkout-btn">FINALIZAR COMPRA</button>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 AZUCENA — Hecho con ❤️</p>
+    </footer>
+
+    <script src="./js/index.js"></script> 
+</body>
+</html>
